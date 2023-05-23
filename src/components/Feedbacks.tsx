@@ -6,10 +6,9 @@ import { testimonials } from '../constants';
 
 type Props = {
 	index: number;
-	testimonial: string;
+	testimonials: string[];
 	name: string;
-	designation: string;
-	company: string;
+	date: string;
 	image: string;
 };
 
@@ -17,14 +16,7 @@ const style = {
 	content: `${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`,
 };
 
-const FeedbackCard = ({
-	index,
-	testimonial,
-	name,
-	designation,
-	company,
-	image,
-}: Props) => {
+const FeedbackCard = ({ index, testimonials, name, date, image }: Props) => {
 	return (
 		<motion.div
 			variants={fadeIn({
@@ -33,18 +25,22 @@ const FeedbackCard = ({
 				delay: index * 0.5,
 				duration: 0.75,
 			})}
-			className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full">
-			<p className="text-white font-black text-[48px]">"</p>
+			className="bg-black-200 p-10 rounded-3xl">
+			<p className="text-white font-black text-[34px]">
+				Meta Database Engineer Professional Certificate
+			</p>
 			<div className="mt-1">
-				<p className="text-white tracking-wider text-[18px]">{testimonial}</p>
+				<ul className="text-white tracking-wider text-[16px] list-disc mt-5 ml-5 space-y-2">
+					{testimonials.map((testimonial: string, index: number) => (
+						<li key={index}>{testimonial}</li>
+					))}
+				</ul>
 				<div className="mt-7 flex justify-between items-center gap-1">
 					<div className="flex-1 flex flex-col">
 						<p className="text-white font-medium text-[16px]">
 							<span className="blue-text-gradient">@</span> {name}
 						</p>
-						<p className="mt-1 text-secondary text-[12px]">
-							{designation} of {company}
-						</p>
+						<p className="mt-1 text-secondary text-[12px]">{date}</p>
 					</div>
 
 					<img
@@ -64,8 +60,8 @@ const Feedbacks = () => {
 			<div
 				className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}>
 				<motion.div variants={textVariant()}>
-					<p className={styles.sectionSubText}>What others say</p>
-					<h2 className={styles.sectionHeadText}>Testimonials.</h2>
+					<p className={styles.sectionSubText}>My Achievement</p>
+					<h2 className={styles.sectionHeadText}>Certification.</h2>
 				</motion.div>
 			</div>
 

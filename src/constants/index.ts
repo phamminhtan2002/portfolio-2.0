@@ -15,14 +15,16 @@ import {
 	git,
 	figma,
 	docker,
-	meta,
-	starbucks,
-	tesla,
-	shopify,
+	bccahs,
+	vnt,
+	scem,
 	carrent,
 	jobit,
 	tripguide,
 	threejs,
+	bcit,
+	meta,
+	financetracker,
 } from '../assets';
 
 export const navLinks = [
@@ -116,107 +118,91 @@ const technologies = [
 
 const experiences = [
 	{
-		title: 'React.js Developer',
-		company_name: 'Starbucks',
-		icon: starbucks,
+		title: 'Computer Information Technology Student',
+		company_name: 'British Columbia Institute of Technology',
+		icon: bcit,
 		iconBg: '#383E56',
-		date: 'March 2020 - April 2021',
+		date: 'Sep 2020 - Dec 2023',
 		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
-			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
+			'Homework Tracker App: Constructed a web application using JavaScript, Python, Flask, NPM, Node.js, and SQLite. Designed and implemented a user-friendly interface for BCIT undergrads to track their assignments and test deadlines. Successfully deployed the app on Heroku and received positive feedback from users.',
+			'Microservices Architecture: Built a microservices architecture using Docker and Kubernetes for application API communication, with Jenkins CI/CD pipeline for automated deployment.',
+			'Windows Server Virtual Machine: Developed and maintained a Windows Server 2022 virtual machine using VMware Workstation Pro. Set up Active Directory Domain Services, users, file servers, group policies, iSCSI, DNS, and DHCP.',
 		],
 	},
 	{
-		title: 'React Native Developer',
-		company_name: 'Tesla',
-		icon: tesla,
+		title: 'WordPress Developer',
+		company_name: 'VNT Trading',
+		icon: vnt,
 		iconBg: '#E6DEDD',
-		date: 'Jan 2021 - Feb 2022',
+		date: 'June 2021 - Sep 2022',
 		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
-			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+			'Constructed a full-stack e-commerce website using WordPress and WooCommerce.',
 			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
+			'Update products information and images.',
 		],
 	},
 	{
-		title: 'Web Developer',
-		company_name: 'Shopify',
-		icon: shopify,
+		title: 'Industry Sponsored Student Project',
+		company_name: 'BC Centre for Aquatic Health Sciences Society',
+		icon: bccahs,
 		iconBg: '#383E56',
-		date: 'Jan 2022 - Jan 2023',
+		date: 'Sep 2022 - Dec 2022',
 		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
+			'Developing and maintaining web applications using Python Flask, R, and MySQL.',
+			'Enabled interactive and user-friendly visualizaion on large-scale data sets.',
 			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-			'Implementing responsive design and ensuring cross-browser compatibility.',
 			'Participating in code reviews and providing constructive feedback to other developers.',
 		],
 	},
 	{
-		title: 'Full stack Developer',
-		company_name: 'Meta',
-		icon: meta,
-		iconBg: '#E6DEDD',
-		date: 'Jan 2023 - Present',
+		title: 'Website Developer',
+		company_name: 'Smart Construction Equipment Management Inc.',
+		icon: scem,
+		iconBg: '#fff',
+		date: 'Feb 2023 - Present',
 		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
-			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
+			'Designed and developed a company website that supports multiple languages and adapts to different screen sizes and devices.',
 		],
 	},
 ];
 
 const testimonials = [
 	{
-		testimonial:
-			'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-		name: 'Sara Lee',
-		designation: 'CFO',
-		company: 'Acme Co',
-		image: 'https://randomuser.me/api/portraits/women/4.jpg',
-	},
-	{
-		testimonial:
-			"I've never met a web developer who truly cares about their clients' success like Rick does.",
-		name: 'Chris Brown',
-		designation: 'COO',
-		company: 'DEF Corp',
-		image: 'https://randomuser.me/api/portraits/men/5.jpg',
-	},
-	{
-		testimonial:
-			"After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-		name: 'Lisa Wang',
-		designation: 'CTO',
-		company: '456 Enterprises',
-		image: 'https://randomuser.me/api/portraits/women/6.jpg',
+		testimonials: [
+			'Completed a database engineering program taught by industry-recognized experts at Meta.',
+			'Demonstrated my proficiency in different aspects of database engineering through a series of five projects that involved database normalization, stored procedures, Python applications, data modeling, and MySQL database solutions.',
+		],
+		name: 'Coursera',
+		date: 'May 18, 2023',
+		image: meta,
 	},
 ];
 
 const projects = [
 	{
-		name: 'Car Rent',
+		name: 'Finance Tracker',
 		description:
-			'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+			'MERN stack web application that allows users to add, delete income and expenses, with an overal graph for a convenient and efficient solution for managing net-income.',
 		tags: [
-			{
-				name: 'react',
-				color: 'blue-text-gradient',
-			},
 			{
 				name: 'mongodb',
 				color: 'green-text-gradient',
 			},
 			{
-				name: 'tailwind',
+				name: 'express',
 				color: 'pink-text-gradient',
 			},
+			{
+				name: 'react',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'nodejs',
+				color: 'yellow-text-gradient',
+			},
 		],
-		image: carrent,
-		source_code_link: 'https://github.com/',
+		image: financetracker,
+		source_code_link: 'https://github.com/phamminhtan2002/finance-tracker',
 	},
 	{
 		name: 'Job IT',
