@@ -1,11 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { styles } from '../styles';
+import { close, logo, menu } from '../assets';
 import { navLinks } from '../constants';
-import { logo, menu, close } from '../assets';
-
-type Props = {};
+import { styles } from '../styles';
 
 const style = {
 	wrapper: `${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`,
@@ -20,7 +18,7 @@ const style = {
 	mobile__list__content: `font-poppins font-medium cursor-pointer text-[16px]`,
 };
 
-const Navbar = (props: Props) => {
+const Navbar = () => {
 	const [active, setActive] = useState('');
 	const [toggle, setToggle] = useState(false);
 
@@ -40,8 +38,8 @@ const Navbar = (props: Props) => {
 						className={style.logo}
 					/>
 					<p className={style.name}>
-						Tan <span className="sm:inline-block hidden">Minh</span> Pham{' '}
-						<span className="sm:inline-block hidden">| BCIT Senior Grad</span>
+						Garen Pham{' '}
+						<span className="sm:inline-block hidden">| Portfolio</span>
 					</p>
 				</Link>
 
