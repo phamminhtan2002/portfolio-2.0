@@ -1,9 +1,6 @@
-import React from 'react';
 import { Html, useProgress } from '@react-three/drei';
 
-type Props = {};
-
-const Loader = (props: Props) => {
+const Loader = () => {
 	const { progress } = useProgress();
 
 	return (

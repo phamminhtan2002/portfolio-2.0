@@ -2,8 +2,6 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
 
-type Props = {};
-
 const style = {
 	wrapper: `${styles.paddingX} xl:px-0 absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`,
 	wrapper2: `flex flex-col justify-center items-center mt-5`,
@@ -13,7 +11,7 @@ const style = {
 	scroll__icon: `w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2`,
 };
 
-const Hero = (props: Props) => {
+const Hero = () => {
 	return (
 		<section className="relative w-full h-screen mx-auto">
 			<div className={style.wrapper}>

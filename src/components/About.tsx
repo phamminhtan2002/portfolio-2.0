@@ -1,12 +1,9 @@
-import React from 'react';
-import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
-import { styles } from '../styles';
+import Tilt from 'react-parallax-tilt';
 import { services } from '../constants';
-import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
-
-type Props = {};
+import { styles } from '../styles';
+import { fadeIn, textVariant } from '../utils/motion';
 
 type ServiceCardProps = {
 	index: number;
@@ -51,7 +48,7 @@ const ServiceCard = ({ index, title, icon }: ServiceCardProps) => {
 	);
 };
 
-const About = (props: Props) => {
+const About = () => {
 	return (
 		<>
 			<motion.div variants={textVariant()}>

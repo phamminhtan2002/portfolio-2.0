@@ -1,12 +1,9 @@
-import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';
-import { styles } from '../styles';
-import { EarthCanvas } from './canvas';
+import { useRef, useState } from 'react';
 import { SectionWrapper } from '../hoc';
+import { styles } from '../styles';
 import { slideIn } from '../utils/motion';
-
-type Props = {};
+import { EarthCanvas } from './canvas';
 
 const style = {
 	wrapper: `xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden`,
@@ -14,7 +11,7 @@ const style = {
 	btn: `bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl`,
 };
 
-const Contact = (props: Props) => {
+const Contact = () => {
 	const formRef = useRef<HTMLFormElement>(null);
 	const [form, setForm] = useState({ name: '', subject: '', message: '' });
 
