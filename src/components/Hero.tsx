@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
+import { jobs } from '../constants';
+import { Cursor, useTypewriter } from 'react-simple-typewriter';
 
 const style = {
 	wrapper: `${styles.paddingX} xl:px-0 absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`,
@@ -12,6 +14,14 @@ const style = {
 };
 
 const Hero = () => {
+	const [text, _count] = useTypewriter({
+		words: jobs,
+		loop: true,
+		typeSpeed: 140,
+		deleteSpeed: 69,
+		delaySpeed: 1400,
+	});
+
 	return (
 		<section className="relative w-full h-screen mx-auto">
 			<div className={style.wrapper}>
@@ -25,9 +35,10 @@ const Hero = () => {
 						Hi, I'm <span className="text-[#915eff]">Garen</span>
 					</h1>
 					<p className={`${styles.heroSubText} mt-2 text-white-100`}>
-						I develop web applications
-						<br className="sm:block hidden" />
-						and cloud infrastructure
+						I do&nbsp;
+						<span>
+							{text} <Cursor cursorColor="#915eff" />
+						</span>
 					</p>
 				</div>
 			</div>

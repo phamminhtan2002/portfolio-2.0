@@ -13,21 +13,20 @@ import {
 	nodejs,
 	mongodb,
 	git,
-	figma,
+	nextjs,
 	docker,
 	bccahs,
 	vnt,
 	scem,
-	carrent,
-	jobit,
-	tripguide,
-	threejs,
+	kubernetes,
 	bcit,
 	meta,
 	financetracker,
+	amazon,
+	videostream,
 } from '../assets';
 
-export const navLinks = [
+const navLinks = [
 	{
 		id: 'about',
 		title: 'About',
@@ -40,6 +39,37 @@ export const navLinks = [
 		id: 'contact',
 		title: 'Contact',
 	},
+];
+
+const jobs = [
+	'Web Development',
+	'Web Design',
+	'Data Engineering',
+	'Cloud Engineering',
+	'React.js',
+	'MySQL',
+	'Python',
+	'Docker',
+	'Kubernetes',
+	'Amazon Web Services',
+	'CI/CD',
+	'Jenkins',
+	'Node.js',
+	'Windows Server',
+	'DNS',
+	'VPN',
+	'DHCP',
+	'Next.js',
+	'WordPress',
+	'Microservices',
+	'HTML',
+	'CSS',
+	'TailwindCSS',
+	'TypeScript',
+	'JavaScript',
+	'Git',
+	'Linux',
+	'Microservices',
 ];
 
 const services = [
@@ -79,6 +109,10 @@ const technologies = [
 		icon: typescript,
 	},
 	{
+		name: 'nextjs',
+		icon: nextjs,
+	},
+	{
 		name: 'React JS',
 		icon: reactjs,
 	},
@@ -99,16 +133,12 @@ const technologies = [
 		icon: mongodb,
 	},
 	{
-		name: 'Three JS',
-		icon: threejs,
-	},
-	{
 		name: 'git',
 		icon: git,
 	},
 	{
-		name: 'figma',
-		icon: figma,
+		name: 'Kubernetes',
+		icon: kubernetes,
 	},
 	{
 		name: 'docker',
@@ -198,54 +228,71 @@ const projects = [
 			},
 			{
 				name: 'nodejs',
-				color: 'yellow-text-gradient',
+				color: 'green-yellow-text-gradient',
 			},
 		],
 		image: financetracker,
 		source_code_link: 'https://github.com/phamminhtan2002/finance-tracker',
 	},
 	{
-		name: 'Job IT',
+		name: 'Amazon Storefront',
 		description:
-			'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+			'Full stack e-commerce website that replicated Amazon.ca, including user authentication, order history, and secure payment processing with debit/credit cards.',
 		tags: [
 			{
 				name: 'react',
 				color: 'blue-text-gradient',
 			},
 			{
-				name: 'restapi',
-				color: 'green-text-gradient',
+				name: 'firebase',
+				color: 'yellow-text-gradient',
 			},
 			{
-				name: 'scss',
+				name: 'tailwindcss',
 				color: 'pink-text-gradient',
 			},
+			{
+				name: 'typescript',
+				color: 'orange-text-gradient',
+			},
 		],
-		image: jobit,
-		source_code_link: 'https://github.com/',
+		image: amazon,
+		source_code_link: 'https://github.com/phamminhtan2002/amazon-fullstack',
 	},
 	{
-		name: 'Trip Guide',
+		name: 'Video Streaming System',
 		description:
-			'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+			'A complex microservices web application that ultilizes Kubernetes to deploy on Amazon EKS. It has Nextjs as the frontend and Express with MySQL as the backend.',
 		tags: [
 			{
 				name: 'nextjs',
-				color: 'blue-text-gradient',
+				color: 'black-text-gradient',
 			},
 			{
-				name: 'supabase',
+				name: 'mysql',
 				color: 'green-text-gradient',
 			},
 			{
-				name: 'css',
+				name: 'docker',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'kubernetes',
 				color: 'pink-text-gradient',
 			},
 		],
-		image: tripguide,
-		source_code_link: 'https://github.com/',
+		image: videostream,
+		source_code_link:
+			'https://github.com/phamminhtan2002/Video-Streaming-System/tree/kubernetes',
 	},
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+	navLinks,
+	jobs,
+	services,
+	technologies,
+	experiences,
+	testimonials,
+	projects,
+};

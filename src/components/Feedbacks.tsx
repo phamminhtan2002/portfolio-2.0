@@ -17,6 +17,13 @@ const style = {
 };
 
 const FeedbackCard = ({ index, testimonials, name, date, image }: Props) => {
+	const handleClick = () => {
+		window.open(
+			'https://www.coursera.org/account/accomplishments/professional-cert/HMFSCW2N5YUM',
+			'_blank',
+		);
+	};
+
 	return (
 		<motion.div
 			variants={fadeIn({
@@ -25,7 +32,8 @@ const FeedbackCard = ({ index, testimonials, name, date, image }: Props) => {
 				delay: index * 0.5,
 				duration: 0.75,
 			})}
-			className="bg-black-200 p-10 rounded-3xl">
+			onClick={handleClick}
+			className="bg-black-200 p-10 rounded-3xl cursor-pointer">
 			<p className="text-white font-black text-[34px]">
 				Meta Database Engineer Professional Certificate
 			</p>

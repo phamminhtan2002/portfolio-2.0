@@ -9,7 +9,7 @@ import close from './close.svg';
 
 import css from './tech/css.png';
 import docker from './tech/docker.png';
-import figma from './tech/figma.png';
+import nextjs from './tech/next.png';
 import git from './tech/git.png';
 import html from './tech/html.png';
 import javascript from './tech/javascript.png';
@@ -19,7 +19,8 @@ import reactjs from './tech/reactjs.png';
 import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
-import threejs from './tech/threejs.svg';
+import kubernetes from './tech/kubernetes.png';
+import mysql from './tech/mysql.png';
 
 import bcit from './company/bcit.png';
 import bccahs from './company/bccahs.jpg';
@@ -27,10 +28,9 @@ import vnt from './company/vnt.png';
 import scem from './company/scem.jpg';
 import meta from './company/meta.png';
 
-import carrent from './carrent.png';
-import jobit from './jobit.png';
-import tripguide from './tripguide.png';
 import financetracker from './financetracker.png';
+import amazon from './amazon.jpg';
+import videostream from './videostream.png';
 
 export {
 	logo,
@@ -43,7 +43,7 @@ export {
 	close,
 	css,
 	docker,
-	figma,
+	nextjs,
 	git,
 	html,
 	javascript,
@@ -53,14 +53,14 @@ export {
 	redux,
 	tailwind,
 	typescript,
-	threejs,
+	kubernetes,
+	mysql,
 	bccahs,
 	vnt,
 	bcit,
 	scem,
 	meta,
-	carrent,
-	jobit,
-	tripguide,
 	financetracker,
+	amazon,
+	videostream,
 };
