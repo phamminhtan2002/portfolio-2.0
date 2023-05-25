@@ -179,7 +179,7 @@ const experiences = [
 		date: 'Sep 2022 - Dec 2022',
 		points: [
 			'Developed and maintained web applications using Python Flask, R, and MySQL.',
-			'Enabled interactive and user-friendly visualizaion on large-scale data sets.',
+			'Enabled interactive and user-friendly visualization on large-scale data sets.',
 			'Collaborated with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
 			'Participated in code reviews and provided constructive feedback to other developers.',
 		],
