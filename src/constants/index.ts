@@ -167,8 +167,8 @@ const experiences = [
 		date: 'June 2021 - Sep 2022',
 		points: [
 			'Constructed a full-stack e-commerce website using WordPress and WooCommerce.',
-			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Update products information and images.',
+			'Implemented responsive design and ensured cross-browser compatibility.',
+			'Uploaded and updated products information and images.',
 		],
 	},
 	{
@@ -178,10 +178,10 @@ const experiences = [
 		iconBg: '#383E56',
 		date: 'Sep 2022 - Dec 2022',
 		points: [
-			'Developing and maintaining web applications using Python Flask, R, and MySQL.',
+			'Developed and maintained web applications using Python Flask, R, and MySQL.',
 			'Enabled interactive and user-friendly visualizaion on large-scale data sets.',
-			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
+			'Collaborated with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+			'Participated in code reviews and provided constructive feedback to other developers.',
 		],
 	},
 	{
@@ -237,7 +237,7 @@ const projects = [
 	{
 		name: 'Amazon Storefront',
 		description:
-			'Full stack e-commerce website that replicated Amazon.ca, including user authentication, order history, and secure payment processing with debit/credit cards.',
+			'Full stack e-commerce website that replicates Amazon.ca, including user authentication, order history, and secure payment processing with debit/credit cards.',
 		tags: [
 			{
 				name: 'react',
