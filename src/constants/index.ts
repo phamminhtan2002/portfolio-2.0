@@ -1,29 +1,28 @@
 import {
-	mobile,
+	amazon,
 	backend,
+	bccahs,
+	bcit,
 	creator,
-	web,
-	javascript,
-	typescript,
-	html,
 	css,
+	docker,
+	financetracker,
+	git,
+	html,
+	javascript,
+	kubernetes,
+	meta,
+	mobile,
+	mongodb,
+	nextjs,
+	nodejs,
 	reactjs,
 	redux,
 	tailwind,
-	nodejs,
-	mongodb,
-	git,
-	nextjs,
-	docker,
-	bccahs,
-	vnt,
-	scem,
-	kubernetes,
-	bcit,
-	meta,
-	financetracker,
-	amazon,
+	typescript,
 	videostream,
+	vnt,
+	web,
 } from '../assets';
 
 const navLinks = [
@@ -168,30 +167,23 @@ const experiences = [
 		points: [
 			'Constructed a full-stack e-commerce website using WordPress and WooCommerce.',
 			'Implemented responsive design and ensured cross-browser compatibility.',
-			'Uploaded and updated products information and images.',
+			'Organized and uploaded product data to the web.',
+			'Implemented designs that included custom post-types & taxonomies, as well as social media integration.',
 		],
 	},
 	{
-		title: 'Industry Sponsored Student Project',
+		title: 'Full-stack Developer',
 		company_name: 'BC Centre for Aquatic Health Sciences Society',
 		icon: bccahs,
 		iconBg: '#383E56',
 		date: 'Sep 2022 - Dec 2022',
 		points: [
-			'Developed and maintained web applications using Python Flask, R, and MySQL.',
+			'Worked as a full stack developer through BCIT’s Industry Sponsored Project.',
+			'Designed and developed a statistical analysis web application using Python Flask, R, and MySQL.',
+			'Deployed and established secured connections between front end application and MySQL database on Arbutus Cloud.',
 			'Enabled interactive and user-friendly visualization on large-scale data sets.',
-			'Collaborated with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-			'Participated in code reviews and provided constructive feedback to other developers.',
-		],
-	},
-	{
-		title: 'Website Developer',
-		company_name: 'Smart Construction Equipment Management Inc.',
-		icon: scem,
-		iconBg: '#fff',
-		date: 'Feb 2023 - Present',
-		points: [
-			'Designed and developed a company website that supports multiple languages and adapts to different screen sizes and devices.',
+			'Tested the website prior to live deployment by performing unit testing, integration testing, and E2E testing.',
+			'Followed industry best practices, including Agile methodology, DevOps, and code reviews.',
 		],
 	},
 ];
@@ -212,7 +204,7 @@ const projects = [
 	{
 		name: 'Finance Tracker',
 		description:
-			'MERN stack web application that allows users to add, delete income and expenses, with an overal graph for a convenient and efficient solution for managing net-income.',
+			'MERN stack web application that allows users to add, delete income and expenses, with an overview graph display. It is a convenient and efficient solution for managing net-income.',
 		tags: [
 			{
 				name: 'mongodb',
@@ -288,11 +280,11 @@ const projects = [
 ];
 
 export {
-	navLinks,
+	experiences,
 	jobs,
+	navLinks,
+	projects,
 	services,
 	technologies,
-	experiences,
 	testimonials,
-	projects,
 };
