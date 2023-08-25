@@ -52,22 +52,23 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          <li>
+            <Link
+              to='https://github.com/garenpham/'
+              target='_blank'
+              className={style.icon}>
+              <ImGithub />
+            </Link>
+          </li>
+          <li>
+            <Link
+              to='https://drive.google.com/file/d/1SaJNu99xH6RjqwC-NfP7_Qrj-5_fXZtP/view?usp=sharing'
+              target='_blank'
+              className={style.icon}>
+              <IoDocumentText />
+            </Link>
+          </li>
         </ul>
-
-        <div className='hidden lg:flex items-center gap-10'>
-          <Link
-            to='https://github.com/garenpham/'
-            target='_blank'
-            className={style.icon}>
-            <ImGithub />
-          </Link>
-          <Link
-            to='https://drive.google.com/file/d/1SaJNu99xH6RjqwC-NfP7_Qrj-5_fXZtP/view?usp=sharing'
-            target='_blank'
-            className={style.icon}>
-            <IoDocumentText />
-          </Link>
-        </div>
 
         <div className={style.mobile}>
           <img
