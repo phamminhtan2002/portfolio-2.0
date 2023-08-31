@@ -1,29 +1,31 @@
 import {
-	amazon,
-	backend,
-	bccahs,
-	bcit,
-	creator,
-	css,
-	docker,
-	financetracker,
-	git,
-	html,
-	javascript,
-	kubernetes,
-	meta,
-	mobile,
-	mongodb,
-	nextjs,
-	nodejs,
-	reactjs,
-	redux,
-	tailwind,
-	typescript,
-	videostream,
-	vnt,
-	web,
-} from '../assets';
+  aiweather,
+  amazon,
+  backend,
+  bccahs,
+  bcit,
+  creator,
+  css,
+  docker,
+  financetracker,
+  git,
+  html,
+  javascript,
+  kubernetes,
+  meta,
+  mobile,
+  mongodb,
+  nextjs,
+  nodejs,
+  reactjs,
+  redux,
+  socialmediaapp,
+  tailwind,
+  typescript,
+  videostream,
+  vnt,
+  web,
+} from '../assets'
 
 const navLinks = [
   {
@@ -205,6 +207,56 @@ const testimonials = [
 ]
 
 const projects = [
+  {
+    name: 'AI Weather App',
+    description:
+      'AI Weather App is a web app that chats with an ChatGPT 3.5 Turbo AI Model, forecasting about the weather using React, GraphQL, and StepZen.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'black-text-gradient',
+      },
+      {
+        name: 'kubernetes',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'chatGPT',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'typescript',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: aiweather,
+    source_code_link: 'https://github.com/garenpham/AI-Weather-App',
+  },
+  {
+    name: 'Social Media App',
+    description:
+      'This project is about building and deploying a social media app with the MERN stack and features like auth, pagination, and comments.',
+    tags: [
+      {
+        name: 'mern',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'mongodb',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'typescript',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'expressjs',
+        color: 'yellow-text-gradient',
+      },
+    ],
+    image: socialmediaapp,
+    source_code_link: 'https://github.com/garenpham/moments-app',
+  },
   {
     name: 'Finance Tracker',
     description:
