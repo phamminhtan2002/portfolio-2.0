@@ -18,7 +18,7 @@ type Props = {
 const style = {
   content__con: `mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]`,
   link__con: `absolute inset-0 flex justify-end m-3 card-img_hover`,
-  link: `black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer`,
+  link: `black-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer active:scale-95 transition-transform ease-in`,
 }
 
 const ProjectCard = ({
@@ -57,7 +57,7 @@ const ProjectCard = ({
               <img
                 src={github}
                 alt='github'
-                className='w-1/2 h-1/2 object-contain'
+                className='w-full h-full object-contain opacity-40 hover:opacity-100 animate-pulse'
               />
             </div>
           </div>
