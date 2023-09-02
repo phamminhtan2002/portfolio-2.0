@@ -83,12 +83,12 @@ const services = [
     icon: web,
   },
   {
-    title: 'React.js Developer',
-    icon: mobile,
-  },
-  {
     title: 'Backend Developer',
     icon: backend,
+  },
+  {
+    title: 'Database Engineer',
+    icon: mobile,
   },
   {
     title: 'Microservices Engineer',
