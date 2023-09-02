@@ -44,7 +44,7 @@ const navLinks = [
     id: 'contact',
     title: 'Contact',
   },
-]
+] as const
 
 const jobs = [
   'Web Development',

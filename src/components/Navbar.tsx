@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { motion } from 'framer-motion'
+import React from 'react'
 import { ImGithub } from 'react-icons/im'
 import { IoDocumentText } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 import { close, logo, menu } from '../assets'
 import { navLinks } from '../constants'
+import { useActiveSectionContext } from '../context/active-section-context'
 import { styles } from '../styles'
 
 const style = {
@@ -12,7 +14,7 @@ const style = {
   logo: `w-9 h-9 object-contain`,
   name: `text-white text-[18px] font-bold cursor-pointer`,
   list: `list-none hidden lg:flex flex-row gap-10`,
-  list__content: `hover:text-white text-[18px] font-medium cursor-pointer`,
+  list__content: `hover:text-white text-[18px] font-medium cursor-pointer relative`,
   mobile: `sm:hidden flex flex-1 justify-end items-center`,
   mobile__con: `p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`,
   mobile__list: `list-none flex justify-end items-start flex-col gap-4`,
@@ -21,8 +23,9 @@ const style = {
 }
 
 const Navbar = () => {
-  const [active, setActive] = useState('')
-  const [toggle, setToggle] = useState(false)
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext()
+  const [toggle, setToggle] = React.useState(false)
 
   return (
     <nav className={style.wrapper}>
@@ -31,7 +34,7 @@ const Navbar = () => {
           to='/'
           className='flex items-center gap-2'
           onClick={() => {
-            setActive('')
+            setActiveSection('')
             window.scrollTo(0, 0)
           }}>
           <img src={logo} alt='logo' className={style.logo} />
@@ -46,10 +49,24 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? 'text-white' : 'text-secondary'
+                activeSection === nav.id ? 'text-white' : 'text-secondary'
               } ${style.list__content}`}
-              onClick={() => setActive(nav.title)}>
+              onClick={() => {
+                setActiveSection(nav.id)
+                setTimeOfLastClick(Date.now())
+              }}>
               <a href={`#${nav.id}`}>{nav.title}</a>
+
+              {activeSection === nav.id && (
+                <motion.span
+                  layoutId='activeSection'
+                  transition={{
+                    type: 'spring',
+                    stiffness: 280,
+                    damping: 30,
+                  }}
+                  className='border-b border-yellow-400 absolute inset-0 -z-10'></motion.span>
+              )}
             </li>
           ))}
           <li>
@@ -83,11 +100,11 @@ const Navbar = () => {
                 <li
                   key={nav.id}
                   className={`${
-                    active === nav.title ? 'text-white' : 'text-secondary'
+                    activeSection === nav.id ? 'text-white' : 'text-secondary'
                   } ${style.mobile__list__content}`}
                   onClick={() => {
                     setToggle(!toggle)
-                    setActive(nav.title)
+                    setActiveSection(nav.id)
                   }}>
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
@@ -114,4 +131,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar;
+export default Navbar

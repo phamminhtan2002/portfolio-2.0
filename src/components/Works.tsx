@@ -3,6 +3,7 @@ import Tilt from 'react-parallax-tilt'
 import { github } from '../assets'
 import { projects } from '../constants'
 import { SectionWrapper } from '../hoc'
+import { useSectionInView } from '../lib/hooks'
 import { styles } from '../styles'
 import { fadeIn, textVariant } from '../utils/motion'
 
@@ -83,8 +84,9 @@ const ProjectCard = ({
 }
 
 const Works = () => {
+  const { ref } = useSectionInView('projects', 0.25)
   return (
-    <>
+    <div ref={ref}>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
@@ -110,7 +112,7 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </>
+    </div>
   )
 }
 
