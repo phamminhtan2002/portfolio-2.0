@@ -15,8 +15,10 @@ type Props = {
   date: string
   icon: string
   iconBg: string
+  iconSize: string
   company_name: string
   points: string[]
+  company_link: string
 }
 
 const ExperienceCard = ({ experience }: { experience: Props }) => {
@@ -27,13 +29,16 @@ const ExperienceCard = ({ experience }: { experience: Props }) => {
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className='flex justify-center items-center w-full h-full'>
+        <a
+          href={experience.company_link}
+          target='_blank'
+          className='flex justify-center items-center w-full h-full hover:scale-[1.2] transition-transform ease-in-out'>
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className='w-[64%] h-[64%] object-contain'
+            className={`${experience.iconSize} object-contain`}
           />
-        </div>
+        </a>
       }>
       <div>
         <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>

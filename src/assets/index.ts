@@ -25,6 +25,7 @@ import typescript from './tech/typescript.png'
 import bccahs from './company/bccahs.jpg'
 import bcit from './company/bcit.png'
 import meta from './company/meta.png'
+import onedrug from './company/onedrug.png'
 import scem from './company/scem.jpg'
 import vnt from './company/vnt.png'
 
@@ -58,6 +59,7 @@ export {
   mysql,
   nextjs,
   nodejs,
+  onedrug,
   reactjs,
   redux,
   scem,
@@ -68,3 +70,4 @@ export {
   vnt,
   web,
 }
+
