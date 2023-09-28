@@ -8,8 +8,8 @@ import { EarthCanvas } from './canvas'
 
 const style = {
   wrapper: `xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden`,
-  input: `bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium`,
-  btn: `bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl`,
+  input: `bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg border-none font-medium outline-none border border-transparent active:border-white`,
+  btn: `bg-tertiary py-3 px-8 w-fit text-white font-bold shadow-md shadow-primary rounded-xl border border-transparent hover:border-white ease-linear active:scale-95 transition-all`,
 }
 
 const Contact = () => {
@@ -42,14 +42,16 @@ const Contact = () => {
           delay: 0.2,
           duration: 1,
         })}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'>
+        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+      >
         <p className={`${styles.sectionSubText}`}>Get in touch</p>
         <h3 className={`${styles.sectionHeadText}`}>Contact.</h3>
 
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'>
+          className='mt-12 flex flex-col gap-8'
+        >
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
             <input
@@ -86,6 +88,7 @@ const Contact = () => {
               placeholder='What do you want to say?'
               className={style.input}
               autoComplete='off'
+              required
             />
           </label>
 
@@ -102,7 +105,8 @@ const Contact = () => {
           delay: 0.2,
           duration: 1,
         })}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'>
+        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+      >
         <EarthCanvas />
       </motion.div>
     </div>
