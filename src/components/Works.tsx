@@ -37,13 +37,15 @@ const ProjectCard = ({
         type: 'spring',
         delay: index * 0.5, //comming up 1 by 1
         duration: 0.75,
-      })}>
+      })}
+    >
       <Tilt
         tiltMaxAngleX={34}
         tiltMaxAngleY={34}
         scale={1.04}
         transitionSpeed={450}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'>
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+      >
         <div className='relative w-full h-[230px]'>
           <img
             src={image}
@@ -54,7 +56,8 @@ const ProjectCard = ({
           <div className={style.link__con}>
             <div
               onClick={() => window.open(source_code_link, '_blank')}
-              className={style.link}>
+              className={style.link}
+            >
               <img
                 src={github}
                 alt='github'
@@ -66,7 +69,7 @@ const ProjectCard = ({
 
         <div className='mt-5'>
           <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px] h-[84px] overflow-scroll'>
+          <p className='mt-2 text-secondary text-[14px] h-[84px] overflow-y-auto overflow-x-hidden'>
             {description}
           </p>
         </div>
