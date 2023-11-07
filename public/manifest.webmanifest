@@ -1,10 +1,10 @@
 {
-    "theme_color": "#2563eb",
-    "background_color": "#2563eb",
+    "theme_color": "#915eff",
+    "background_color": "#915eff",
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "Tan Minh Pham",
+    "name": "Tan Pham | Portfolio",
     "short_name": "tanpham",
     "description": "portfolio",
     "icons": [
