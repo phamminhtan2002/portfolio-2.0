@@ -39,7 +39,7 @@ const Navbar = () => {
           }}>
           <img src={logo} alt='logo' className={style.logo} />
           <p className={style.name}>
-            Garen Pham{' '}
+            Tan Pham{' '}
             <span className='sm:inline-block hidden'>| Portfolio</span>
           </p>
         </Link>
@@ -71,7 +71,7 @@ const Navbar = () => {
           ))}
           <li>
             <Link
-              to='https://github.com/garenpham/'
+              to='https://github.com/tanmpham/'
               target='_blank'
               className={style.icon}>
               <ImGithub />
@@ -111,7 +111,7 @@ const Navbar = () => {
               ))}
               <li className='flex items-center gap-[10px]'>
                 <Link
-                  to='https://github.com/garenpham/'
+                  to='https://github.com/tanmpham/'
                   target='_blank'
                   className={style.icon}>
                   <ImGithub />
