@@ -79,7 +79,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to='https://drive.google.com/file/d/1Tt8xzGJTqMMKVxVgfYgt9EQFaTj3SkUc/view?usp=sharing'
+              to='https://drive.google.com/file/d/1dUEZWi3d8gmNWhpAgaf_Bv3t7RQEmNzg/view?usp=sharing'
               target='_blank'
               className={style.icon}>
               <IoDocumentText />
