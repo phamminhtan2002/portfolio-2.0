@@ -250,7 +250,7 @@ const projects = [
       },
     ],
     image: aiweather,
-    source_code_link: 'https://github.com/garenpham/AI-Weather-App',
+    source_code_link: 'https://github.com/tanmpham/AI-Weather-App',
   },
   {
     name: 'Social Media App',
@@ -275,7 +275,7 @@ const projects = [
       },
     ],
     image: socialmediaapp,
-    source_code_link: 'https://github.com/garenpham/moments-app',
+    source_code_link: 'https://github.com/tanmpham/moments-app',
   },
   {
     name: 'Finance Tracker',
@@ -300,7 +300,7 @@ const projects = [
       },
     ],
     image: financetracker,
-    source_code_link: 'https://github.com/phamminhtan2002/finance-tracker',
+    source_code_link: 'https://github.com/tanmpham/finance-tracker',
   },
   {
     name: 'Amazon Storefront',
@@ -325,7 +325,7 @@ const projects = [
       },
     ],
     image: amazon,
-    source_code_link: 'https://github.com/phamminhtan2002/amazon-fullstack',
+    source_code_link: 'https://github.com/tanmpham/amazon-fullstack',
   },
   {
     name: 'Video Streaming System',
@@ -351,7 +351,7 @@ const projects = [
     ],
     image: videostream,
     source_code_link:
-      'https://github.com/phamminhtan2002/Video-Streaming-System/tree/kubernetes',
+      'https://github.com/tanmpham/Video-Streaming-System/tree/kubernetes',
   },
 ]
 
@@ -362,6 +362,6 @@ export {
   projects,
   services,
   technologies,
-  testimonials,
+  testimonials
 }
 

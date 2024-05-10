@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
-import { Cursor, useTypewriter } from 'react-simple-typewriter'
-import { jobs } from '../constants'
-import { useSectionInView } from '../lib/hooks'
-import { styles } from '../styles'
-import { ComputersCanvas } from './canvas'
+import { Cursor, useTypewriter } from 'react-simple-typewriter';
+import { jobs } from '../constants';
+import { useSectionInView } from '../lib/hooks';
+import { styles } from '../styles';
+import { ComputersCanvas } from './canvas';
 
 const style = {
   wrapper: `${styles.paddingX} xl:px-0 absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`,
@@ -34,7 +34,7 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915eff]'>Garen</span>
+            Hi, I'm <span className='text-[#915eff]'>Tan</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I do&nbsp;

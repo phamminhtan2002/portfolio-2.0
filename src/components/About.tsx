@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 import Tilt from 'react-parallax-tilt';
 import { services } from '../constants';
 import { SectionWrapper } from '../hoc';
-import { useSectionInView } from '../lib/hooks'
-import { styles } from '../styles'
-import { fadeIn, textVariant } from '../utils/motion'
+import { useSectionInView } from '../lib/hooks';
+import { styles } from '../styles';
+import { fadeIn, textVariant } from '../utils/motion';
 
 type ServiceCardProps = {
   index: number
@@ -63,7 +63,7 @@ const About = () => {
           duration: 1,
         })}
         className={style.bio}>
-        My full legal name is Tan Minh Pham. I am a Full Stack Developer with a
+        My full name is Tan Minh Pham. I am a Full Stack Developer with a
         passion for building beautiful and user-friendly websites. I have a
         strong understanding of both front-end and back-end development, and I
         am excited to put my skills to use in a professional setting. I am a
