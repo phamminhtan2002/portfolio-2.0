@@ -9,17 +9,17 @@ import { useActiveSectionContext } from '../context/active-section-context'
 import { styles } from '../styles'
 
 const style = {
-  wrapper: `${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`,
-  content: `w-full flex justify-between items-center max-w-7xl mx-auto`,
-  logo: `w-9 h-9 object-contain`,
-  name: `text-white text-[18px] font-bold cursor-pointer`,
-  list: `list-none hidden lg:flex flex-row gap-10`,
-  list__content: `hover:text-white text-[18px] font-medium cursor-pointer relative`,
-  mobile: `sm:hidden flex flex-1 justify-end items-center`,
-  mobile__con: `p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`,
-  mobile__list: `list-none flex justify-end items-start flex-col gap-4`,
-  mobile__list__content: `font-poppins font-medium cursor-pointer text-[16px]`,
-  icon: `text-[24px] text-secondary cursor-pointer hover:text-white`,
+    wrapper: `${styles.paddingX} w-screen flex items-center py-5 fixed top-0 z-20 bg-primary`,
+    content: `w-full flex justify-between items-center max-w-7xl mx-auto`,
+    logo: `w-9 h-9 object-contain`,
+    name: `text-white text-[18px] font-bold cursor-pointer`,
+    list: `list-none hidden lg:flex flex-row gap-10`,
+    list__content: `hover:text-white text-[18px] font-medium cursor-pointer relative`,
+    mobile: `sm:hidden flex flex-1 justify-end items-center`,
+    mobile__con: `p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`,
+    mobile__list: `list-none flex justify-end items-start flex-col gap-4`,
+    mobile__list__content: `font-poppins font-medium cursor-pointer text-[16px]`,
+    icon: `text-[24px] text-secondary cursor-pointer hover:text-white`,
 }
 
 const Navbar = () => {

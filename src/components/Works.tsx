@@ -89,33 +89,38 @@ const ProjectCard = ({
 const Works = () => {
   const { ref } = useSectionInView('projects', 0.25)
   return (
-    <div ref={ref}>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My work</p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
-      </motion.div>
-      <div className='w-full flex'>
-        <motion.p
-          variants={fadeIn({
-            direction: '',
-            type: '',
-            delay: 0.1,
-            duration: 1,
-          })}
-          className={style.content__con}>
-          These projects showcase my skills and experiences through real-world
-          examples of my work. Each project is briefly described with a link to
-          the code repository and live demos in it. It reflects my ability to
-          solve complex problems, work with different technologies, and manage
-          projects effiently.
-        </motion.p>
+      <div ref={ref}>
+          <motion.div variants={textVariant()}>
+              <p className={styles.sectionSubText}>My work</p>
+              <h2 className={styles.sectionHeadText}>Projects.</h2>
+          </motion.div>
+          <div className='w-full flex'>
+              <motion.p
+                  variants={fadeIn({
+                      direction: '',
+                      type: '',
+                      delay: 0.1,
+                      duration: 1,
+                  })}
+                  className={style.content__con}
+              >
+                  These projects showcase my skills and experiences through
+                  real-world examples of my work. Each project is briefly
+                  described with a link to the code repository and live demos in
+                  it. It reflects my ability to solve complex problems, work
+                  with different technologies, and manage projects efficiently.
+              </motion.p>
+          </div>
+          <div className='mt-20 flex flex-wrap gap-7'>
+              {projects.map((project, index) => (
+                  <ProjectCard
+                      key={`project-${index}`}
+                      index={index}
+                      {...project}
+                  />
+              ))}
+          </div>
       </div>
-      <div className='mt-20 flex flex-wrap gap-7'>
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
-      </div>
-    </div>
   )
 }
 

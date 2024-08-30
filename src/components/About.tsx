@@ -49,34 +49,36 @@ const About = () => {
   const { ref } = useSectionInView('about')
 
   return (
-    <div ref={ref}>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
+      <div ref={ref}>
+          <motion.div variants={textVariant()}>
+              <p className={styles.sectionSubText}>Introduction</p>
+              <h2 className={styles.sectionHeadText}>Overview.</h2>
+          </motion.div>
 
-      <motion.p
-        variants={fadeIn({
-          direction: '',
-          type: '',
-          delay: 0.1,
-          duration: 1,
-        })}
-        className={style.bio}>
-        My full name is Tan Minh Pham. I am a Full Stack Developer with a
-        passion for building beautiful and user-friendly websites. I have a
-        strong understanding of both front-end and back-end development, and I
-        am excited to put my skills to use in a professional setting. I am a
-        quick learner and a team player, and I am confident that I can be a
-        valuable asset to any web development team.
-      </motion.p>
+          <motion.p
+              variants={fadeIn({
+                  direction: '',
+                  type: '',
+                  delay: 0.1,
+                  duration: 1,
+              })}
+              className={style.bio}
+          >
+              Hi, I&apos;m Tan Minh Pham, a Full Stack Developer with a passion
+              for building beautiful and user-friendly websites. I have a solid
+              grasp of both front-end and back-end development, along with
+              experience in application deployment and scaling. I&apos;m excited
+              to bring my skills to a professional setting. I&apos;m a quick
+              learner and a team player, and I believe I can be a valuable
+              addition to any web development team.
+          </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
+          <div className='mt-20 flex flex-wrap gap-10'>
+              {services.map((service, index) => (
+                  <ServiceCard key={service.title} index={index} {...service} />
+              ))}
+          </div>
       </div>
-    </div>
   )
 }
 
